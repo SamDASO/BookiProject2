@@ -91,6 +91,99 @@ header {
     color: #0065FC;
 }
 
+/****** Recherche and filtres ***********/
+
+#info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1340px;
+    height: 281px;
+    margin-top: 30px;
+}
+
+.info-group {
+    margin-bottom: 35px;
+}
+
+#research-section {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 24px;
+    height: 50px;
+    width: 377px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+
+
+.location-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+#research {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+#research-btn {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #0065FC;
+    padding: 15px 16px;
+    border-radius: 0 15px 15px 0;
+}
+
+#research,
+#research-btn {
+    border: none;
+}
+
+/*#research {
+    padding: 0 24px;
+    height: 44px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 700;
+    border: 1px solid black;
+    border-right: 0;
+    border-left: 0;
+}*/
+
+
+#info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.info-circle {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    border: #D9D9D9 1px solid;
+    border-radius: 100%;
+
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
