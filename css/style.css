@@ -378,6 +378,28 @@ header {
     padding: 20px 19px;
 }
 
+/****** footer ***********/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    gap: 15px;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.footer-link {
+    color: black;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
