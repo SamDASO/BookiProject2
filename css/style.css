@@ -388,6 +388,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
+    margin-top: 35px;
 }
 
 .footer-div {
