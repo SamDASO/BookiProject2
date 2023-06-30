@@ -93,23 +93,28 @@ header {
 
 #onglets {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 25px;
+    height: 79px;
+    gap: 68px;
 }
 
 #onglets li {
-    margin: 0 30px;
+    display: inline-block;
+    height: 100%;
+    padding-top: 30px;
 }
 
 #onglets li a {
-    padding-top: 15px;
     color: black;
+
 }
 
-#onglets li a:hover {
+#onglets li:hover {
     border-top: #0065FC 2px solid;
     color: #0065FC;
+}
+
+#onglets li:hover a {
+    color: inherit;
 }
 
 /****** Recherche and filtres ***********/
