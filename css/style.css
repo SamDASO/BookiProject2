@@ -428,6 +428,7 @@ footer {
 @media (max-width: 1024px) {
     .accommodations-and-popular {
         flex-direction: column;
+        gap: 0;
     }
 
     #accommodations {
@@ -593,9 +594,17 @@ footer {
 
     .accommodations-and-popular section {
         width: 100%;
-        padding: 30px 20px;
+        padding: 0;
         margin: 0;
         border-radius: 0;
+    }
+
+    #accommodations {
+        padding: 20px;
+    }
+
+    .popular {
+        padding: 30px 20px;
     }
 
     .popular-cards {
