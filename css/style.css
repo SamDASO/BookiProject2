@@ -162,7 +162,7 @@ h3 {
     border-bottom: 1px solid var(--main-bg-color);
     border-left: none;
     border-right: none;
-    padding: 14px 0;
+    padding: 14px 24px;
     text-align: center;
 }
 
@@ -172,6 +172,7 @@ h3 {
     padding: 15px 16px;
     border-radius: 0 15px 15px 0;
     border: none;
+    cursor: pointer;
 }
 
 #research-btn span {
@@ -187,7 +188,6 @@ h3 {
 
 #filters {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
@@ -202,6 +202,7 @@ h3 {
     border-radius: 25px;
     height: 50px;
     width: auto;
+    cursor: pointer;
 }
 
 .btn-filter:hover {
@@ -210,6 +211,7 @@ h3 {
 
 .filter-icon {
     margin-right: 10px;
+    font-size: 22px;
 }
 
 #info {
@@ -520,12 +522,8 @@ footer {
 
 
     #research-section {
-        width: 335px;
+        max-width: 335px;
 
-    }
-
-    #research {
-        padding: 14px 38px 14px 0;
     }
 
     #research-btn {
@@ -535,8 +533,7 @@ footer {
         padding: 0;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        right: 19px;
+        margin-left: -15px;
     }
 
     #research-btn span {
@@ -570,14 +567,19 @@ footer {
     }
 
     .btn-filter {
-        margin-bottom: 20px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        margin-bottom: 20px;
         flex-basis: 48%;
         padding: 4px 19px;
         height: 50px;
+        width: auto;
         font-size: 14px;
+    }
+
+    .filter-icon {
+        font-size: 22px;
     }
 
     #info {
