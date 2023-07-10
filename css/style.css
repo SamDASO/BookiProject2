@@ -599,6 +599,7 @@ footer {
 
     #info {
         width: 100%;
+        margin-top: -20px;
     }
 
     .accommodations-and-popular {
