@@ -27,17 +27,17 @@ body {
     color: var(--main-bg-color);
 }
 
-p {
+.info-text {
     font-size: 16px;
 }
 
-h1,
-h2 {
+.main-title {
     font-size: 22px;
     font-weight: 700;
 }
 
-h3 {
+.sub-title,
+.more {
     font-size: 18px;
     font-weight: 700;
 }
@@ -49,11 +49,13 @@ h3 {
     max-width: 1440px;
 }
 
-main {
+.main-content {
     padding: 0 50px;
 }
 
 .section-title {
+    font-size: 22px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -74,6 +76,16 @@ main {
 
 .card-subtitle {
     font-size: 14px;
+}
+
+.card-rating {
+    display: flex;
+    width: 81px;
+}
+
+.fa-star {
+    line-height: 1;
+    width: 100%;
 }
 
 .euro {
@@ -101,8 +113,8 @@ main {
     display: flex;
     height: 79px;
     gap: 68px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 #tabs li {
@@ -135,13 +147,21 @@ main {
     gap: 35px;
 }
 
+.info-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
 #research-section {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
     height: 50px;
-    width: 377px;
+    max-width: 377px;
     border: none;
 
 }
@@ -200,6 +220,9 @@ main {
 }
 
 .btn-filter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     font-size: 16px;
     font-weight: 700;
@@ -307,8 +330,6 @@ main {
 
 .more {
     display: block;
-    font-size: 18px;
-    font-weight: 700;
 
 }
 
@@ -338,7 +359,7 @@ main {
 
 .popular-cards img {
     width: 33%;
-    height: 136px;
+    height: 144px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -352,6 +373,10 @@ main {
     box-sizing: border-box;
 }
 
+.popular-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 .popular-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
@@ -361,9 +386,6 @@ main {
     margin: 0;
 }
 
-.popular .card-rating {
-    margin-bottom: 5px;
-}
 
 /****** Activities ***********/
 #activities {
@@ -401,7 +423,7 @@ main {
 
 /****** footer ***********/
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     background-color: var(--main-bg-color);
@@ -434,10 +456,6 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    #tabs {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
 
     .accommodations-and-popular {
         flex-direction: column;
@@ -463,29 +481,21 @@ footer {
         width: 30%;
     }
 
-    .popular-cards .card-title {
-        font-size: 14px;
-    }
-
-    .popular-cards .card-subtitle {
-        font-size: 13px;
-    }
-
     .activities-cards .card img {
         height: 200px;
     }
 
-    footer {
+    .footer {
         margin: 0 50px;
     }
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
     /* ... */
 
-    main {
+    .main-content {
         padding: 0;
     }
 
@@ -549,6 +559,10 @@ footer {
 
     }
 
+    #research {
+        text-align: left;
+    }
+
     #research-btn {
         width: 50px;
         height: 50px;
@@ -590,14 +604,9 @@ footer {
     }
 
     .btn-filter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         margin-bottom: 20px;
         flex-basis: 48%;
-        padding: 0 19px;
-        height: 50px;
-        width: auto;
         font-size: 14px;
     }
 
@@ -660,7 +669,7 @@ footer {
         width: 100%;
     }
 
-    footer {
+    .footer {
         flex-direction: column;
         padding: 30px;
         gap: 50px;
