@@ -223,7 +223,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     border: 2px solid var(--border-color);
     padding: 0 19px;
@@ -455,6 +455,9 @@ body {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+    .btn-filter {
+        font-size: 16px;
+    }
 
     .accommodations-and-popular {
         flex-direction: column;
